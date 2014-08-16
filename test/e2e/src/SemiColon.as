@@ -1,6 +1,12 @@
 package {
 
 public class SemiColon {
+
+    // missing semicolon
+    private static const WIDTH:int = 50
+    // missing semicolon and type
+    private static const HGEIGHT = 50
+
 	public function testSingleSemiColon():void
 	{
 		;
