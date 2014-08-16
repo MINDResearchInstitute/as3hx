@@ -76,6 +76,24 @@ public class Switches {
 					break;
 		}
 	}
+
+	public function test5():void {
+			switch(pathData.lineType)
+			{
+				case BasePathData.LINEAR:
+					_pathUI = pathFactory.getLinearChalkLine(ClassUtils.castToWeakType(pathData));
+					ClassUtils.castToWeakType(pathData).generateHitArea();
+					break;
+				case BasePathData.ARC:
+					_pathUI = pathFactory.getArcChalkLine(ClassUtils.castToWeakType(pathData));
+					_pathData.generateHitArea();
+					break
+				case BasePathData.CUSTOM:
+					_pathUI = pathFactory.getCustomChalkLine(ClassUtils.castToWeakType(pathData));
+					_pathData.generateHitArea();
+					break;
+			}
+	}
 }
 
 }

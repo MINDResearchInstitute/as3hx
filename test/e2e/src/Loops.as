@@ -17,6 +17,18 @@ public class Loops {
 			var iAdvanceStyleClientChild:Sprite = styleClient as Sprite;
             	}
         }
+
+        public function testWhileLoop():void
+        {
+            var a:int = 0;
+            do a++; while (a<100);
+            a = 0;
+            do a++; 
+            while (a<100);
+            a = 0;
+            do a++ 
+            while (a<100)
+        }
 }
 }
 
